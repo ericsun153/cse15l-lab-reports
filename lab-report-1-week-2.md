@@ -16,13 +16,13 @@
 1. One
 2. Two
 3. Three
-![Image3](Picture1.png)
+![Image3](Picture3.jpg)
 
 * Moving files with `scp`
 1. One
 2. Two
 3. Three
-![Image4](Picture1.png)
+![Image4](Picture4.png)
 
 * Setting an SSH Key
 1. One
