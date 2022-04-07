@@ -31,14 +31,16 @@
 * Moving files with `scp`
 1. On local computer, we first set up a file named `WhereAmI.java`, and contains the following code:
 
-`class WhereAmI {
+```
+class WhereAmI {
     public static void main(String[] args) {
         System.out.println(System.getProperty("os.name"));
         System.out.println(System.getProperty("user.name"));
         System.out.println(System.getProperty("user.home"));
-        System.out.println(System.getProperty("user.dir")) 
+        System.out.println(System.getProperty("user.dir"));
         }
-    }`
+    }
+```
 2. After compling on local computer, we can find it outputting the current **operating system**.
 3. Then we use `scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/` to copy the local file to the server, and the result is showing as following.
 
@@ -46,9 +48,26 @@
 ![Image4](Picture4.png)
 
 * Setting an SSH Key
-1. One
-2. Two
-3. Three
+1. Firstly, we type `ssh-keygen` on local client in order to **generate a pair of private and public key** to login the server.
+2. After that, we copy our key path to `Enter file in which to save the key (/Users/<user-name>/.ssh/id_rsa): ` Then the terminal will generate a random key image like this:
+
+```
++---[RSA 3072]----+
+|                 |
+|       . . + .   |
+|      . . B o .  |
+|     . . B * +.. |
+|      o S = *.B. |
+|       = = O.*.*+|
+|        + * *.BE+|
+|           +.+.o |
+|             ..  |
++----[SHA256]-----+
+```
+
+3. Finally we log back to our server, enter `mkdir .ssh` and use `scp` to copy our key path of the client to the server. `scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+4. After doing all these, you are able to log onto the server **without entering password everytime** on this client!
 
 ![Image5](Picture5.png)
 
