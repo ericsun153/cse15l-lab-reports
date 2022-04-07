@@ -32,7 +32,6 @@
 1. On local computer, we first set up a file named `WhereAmI.java`, and contains the following code:
 
 `class WhereAmI {
-
     public static void main(String[] args) {
         System.out.println(System.getProperty("os.name"));
         System.out.println(System.getProperty("user.name"));
