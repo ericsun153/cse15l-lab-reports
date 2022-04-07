@@ -10,7 +10,7 @@
 1. As a **Windows** computer, the first thing to do is [Install OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)!
 2. After doing so, taking **ieng6** as an example, we are able to find our course-specific account [here](https://sdacs.ucsd.edu/~icc/index.php).
 3. Open a terminal in VSC and type in `ssh + username@ieng6.ucsd.edu` (mine is cs15lsp22ang)
-4. When connecting the server for the first time, it will ask you `Are you sure you want to continue connecting (yes/no/[fingerprint])?`. When you type `yes` and press `enter`
+4. When connecting the server for the first time, it will ask you `Are you sure you want to continue connecting (yes/no/[fingerprint])?`. When you type `yes` and press `enter`, you will be direct to the server.
 5. Then if you log into the server **successfully**, we are able to see the output just like the following picture.
 
 ![Image2](Picture2.png)
