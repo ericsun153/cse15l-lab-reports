@@ -29,7 +29,7 @@
 ![Image3](Picture3.jpg)
 
 ## Moving files with `scp`
-1. On local computer, we first set up a file named `WhereAmI.java`, and contains the following code:
+* On local computer, we first set up a file named `WhereAmI.java`, and contains the following code:
 
 ```
 class WhereAmI {
@@ -41,15 +41,15 @@ class WhereAmI {
         }
     }
 ```
-2. After compling on local computer, we can find it outputting the current **operating system**.
-3. Then we use `scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/` to copy the local file to the server, and the result is showing as following.
+* After compling on local computer, we can find it outputting the current **operating system**.
+* Then we use `scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/` to copy the local file to the server, and the result is showing as following.
 
 
 ![Image4](Picture4.png)
 
 ## Setting an SSH Key
-1. Firstly, we type `ssh-keygen` on local client in order to **generate a pair of private and public key** to login the server.
-2. After that, we copy our key path to `Enter file in which to save the key (/Users/<user-name>/.ssh/id_rsa): ` Then the terminal will generate a random key image like this:
+* Firstly, we type `ssh-keygen` on local client in order to **generate a pair of private and public key** to login the server.
+* After that, we copy our key path to `Enter file in which to save the key (/Users/<user-name>/.ssh/id_rsa): ` Then the terminal will generate a random key image like this:
 
 ```
 +---[RSA 3072]----+
@@ -65,9 +65,9 @@ class WhereAmI {
 +----[SHA256]-----+
 ```
 
-3. Finally we log back to our server, enter `mkdir .ssh` and use `scp` to copy our key path of the client to the server. `scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+* Finally we log back to our server, enter `mkdir .ssh` and use `scp` to copy our key path of the client to the server. `scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 
-4. After doing all these, you are able to log onto the server **without entering password everytime** on this client!
+* After doing all these, you are able to log onto the server **without entering password everytime** on this client!
 
 ![Image5](Picture5.png)
 
@@ -76,3 +76,21 @@ class WhereAmI {
 2. After we run `javac WhereAmI.java` and `java WhereAmI`, we can see the output contains the operating system *Linux* and also our username for CSE 15L.
 
 ![Image6](Picture6.jpg)
+
+* Apart from that, we can write a command in quotes at the end of an `ssh` command to directly run it on the remote server, then exit.
+
+```
+$ ssh cs15lsp22zz@ieng6.ucsd.edu "ls"
+```
+
+![Image7](Picture7.jpg)
+
+* Moreover, we can use semicolons to run multiple commands on the same lines, here is an example:
+
+```
+$ cp WhereAmI.java; javac WhereAmI.java; java WhereAmI
+```
+![Image8](Picture8.jpg)
+
+
+* In this way, we are able to see that the total time of excuting has been reduced significantly.
