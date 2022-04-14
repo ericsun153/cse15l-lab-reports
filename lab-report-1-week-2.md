@@ -1,12 +1,12 @@
 # How to access remotely to a server (eg. ieng6)?
 
-* Installing VSCode
+## Installing VSCode
 1. The first step we should do is install **VSCode** from its official [website](https://code.visualstudio.com/).
 2. After **installation**, we are able to find the initial and primary interface of VSC just as the following picture.
 
 ![Image1](Picture1.png)
 
-* Remotely Connecting
+## Remotely Connecting
 1. As a **Windows** computer, the first thing to do is [Install OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)!
 2. After doing so, taking **ieng6** as an example, we are able to find our course-specific account [here](https://sdacs.ucsd.edu/~icc/index.php).
 3. Open a terminal in VSC and type in `ssh + username@ieng6.ucsd.edu` (mine is cs15lsp22ang)
@@ -15,7 +15,7 @@
 
 ![Image2](Picture2.png)
 
-* Trying Some Commands
+## Trying Some Commands
 1. The following are some useful commands in the implementation of *Linux*. It's quite interesting to make some explorations on them:
 `pwd`, 
 `mkdir`, 
@@ -28,7 +28,7 @@
 
 ![Image3](Picture3.jpg)
 
-* Moving files with `scp`
+## Moving files with `scp`
 1. On local computer, we first set up a file named `WhereAmI.java`, and contains the following code:
 
 ```
@@ -47,7 +47,7 @@ class WhereAmI {
 
 ![Image4](Picture4.png)
 
-* Setting an SSH Key
+## Setting an SSH Key
 1. Firstly, we type `ssh-keygen` on local client in order to **generate a pair of private and public key** to login the server.
 2. After that, we copy our key path to `Enter file in which to save the key (/Users/<user-name>/.ssh/id_rsa): ` Then the terminal will generate a random key image like this:
 
@@ -71,7 +71,7 @@ class WhereAmI {
 
 ![Image5](Picture5.png)
 
-* Optimizing Remote Running
+## Optimizing Remote Running
 1. As previously we have copy `WhereAmI.java` onto the server, so we are able to compile and implement the file on server.
 2. After we run `javac WhereAmI.java` and `java WhereAmI`, we can see the output contains the operating system *Linux* and also our username for CSE 15L.
 
