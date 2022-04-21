@@ -1,4 +1,4 @@
-# Lab Report 2 -- How to find a *failure-inducing input* ,test and debug our code efficiently?
+# How to find a *failure-inducing input* ,test and debug our code efficiently?
 
 ## Test 1： 
 
