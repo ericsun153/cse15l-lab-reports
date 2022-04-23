@@ -55,7 +55,59 @@ java MarkdownParse test-file.md
 
 * **Relationship between the bugs:**
 * After the specified improvement to this test case, we are able to successfully find and get the correct output of `[some-thing.html]` as the following picture:
+
 ![Image5](Week4/test2success.png)
 
 ### Test 3: More complicated and general cases
-> 
+> In this topic, we will explore on more complicated and edge cases to make our `MarkdownParse.java` to break down.
+
+* Code changes:
+
+![code1](Week4/3code1.png)
+![code2](Week4/3code2.png)
+![code3](Week4/3code3.png)
+
+#### 3.1 File with a link in the middle
+> Test case:
+![case3.1](Week4/3.1case.png)
+
+* Test 3.1 Link [here](https://github.com/ericsun153/markdown-parser/blob/main/test8.md).
+
+* Symptom:
+
+![sym3.1](Week4/3.1sympt.png)
+
+* **Relationship between the bugs:**
+
+* After improving, the output should be `[link.html]`:
+![success3.1](Week4/3.1success.png)
+
+#### 3.2 File that uses `[]` but not `()`
+> Test case:
+![case3.2](Week4/3.2case.png)
+
+* Test 3.2 Link [here](https://github.com/ericsun153/markdown-parser/blob/main/test5.md).
+
+* Symptom:
+
+![sym3.2](Week4/3.2sympt.png)
+
+* **Relationship between the bugs:**
+
+* After improving, the output should be `[]`:
+![success3.2](Week4/3.2success.png)
+
+#### 3.3 File with no links
+> Test case:
+![case3.3](Week4/3.3case.png)
+
+* Test 3.3 Link [here](https://github.com/ericsun153/markdown-parser/blob/main/test4.md).
+
+* Symptom:
+
+![sym3.3](Week4/3.3sympt.png)
+
+* **Relationship between the bugs:**
+
+* After improving, the output should be `[]`:
+![success3.3](Week4/3.3success.png)
