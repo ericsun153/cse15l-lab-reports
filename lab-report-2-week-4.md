@@ -68,7 +68,8 @@ java MarkdownParse test-file.md
 ![code3](Week4/3code3.png)
 
 #### 3.1 File with a link in the middle
-> Test case:
+* Test case:
+
 ![case3.1](Week4/3.1case.png)
 
 * Test 3.1 Link [here](https://github.com/ericsun153/markdown-parser/blob/main/test8.md).
@@ -80,10 +81,12 @@ java MarkdownParse test-file.md
 * **Relationship between the bugs:**
 
 * After improving, the output should be `[link.html]`:
+
 ![success3.1](Week4/3.1success.png)
 
 #### 3.2 File that uses `[]` but not `()`
-> Test case:
+* Test case:
+
 ![case3.2](Week4/3.2case.png)
 
 * Test 3.2 Link [here](https://github.com/ericsun153/markdown-parser/blob/main/test5.md).
@@ -95,10 +98,12 @@ java MarkdownParse test-file.md
 * **Relationship between the bugs:**
 
 * After improving, the output should be `[]`:
+
 ![success3.2](Week4/3.2success.png)
 
 #### 3.3 File with no links
-> Test case:
+* Test case:
+
 ![case3.3](Week4/3.3case.png)
 
 * Test 3.3 Link [here](https://github.com/ericsun153/markdown-parser/blob/main/test4.md).
@@ -110,4 +115,5 @@ java MarkdownParse test-file.md
 * **Relationship between the bugs:**
 
 * After improving, the output should be `[]`:
+
 ![success3.3](Week4/3.3success.png)
