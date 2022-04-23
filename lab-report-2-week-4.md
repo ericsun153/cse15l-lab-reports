@@ -118,7 +118,7 @@ Our re-designed program can still be applied here to solve the *bug*. As the new
 
 ![sym3.3](Week4/3.3sympt.png)
 
-* In this test case, the *failure-inducing input* is that there is no link in the file. After running the program, we can see that this input has caused the *symptom* of a `IndexOutOfBoundException`.
+* In this test case, the *failure-inducing input* is that there is no link in the file. After running the program, we can see that this input has caused the *symptom* of a `IndexOutOfBoundException`, as there is no open and close parentheses, the index of the `OpenParen` cannot be found. So for the program after change, as there is no `closeParen` to be found, the method will return -1, and `getLinks` will directly return `[]`.
 
 * After improving, the output should be `[]`:
 
