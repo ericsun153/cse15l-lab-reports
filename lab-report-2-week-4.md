@@ -34,7 +34,9 @@ java MarkdownParse test-file.md
 
 ![image4](Week4/Test1symptom.png)
 
-* **Relationship between the bugs:**
+* In this test case, the *failure-inducing input* is a blank line at the end of the file. After running the program, we can see that this input has caused the *symptom* of a `java.lang.OutOfMemoryError`, which means some loops in our program are running indefinitively. 
+This *bug* which causes this symptom is appeared in **line 14**. Specially to this test case, we add `markdown.length()-1` in order to end the while loop at the last blank line in the test case.
+
 * After the specified improvement to this test case, we are able to successfully find and get the correct output of `[https://something.html, some-thing.html]` as the following picture:
 ![Image5](Week4/Test1success.png)
 
@@ -53,7 +55,8 @@ java MarkdownParse test-file.md
 
 ![image4](Week4/test2symp.png)
 
-* **Relationship between the bugs:**
+* In this test case, the *failure-inducing input* is an image-related input. After running the program, we can see that this input has caused the *symptom* of a wrong output. We expected to get `[some-thing.html]`, but we get all the output even include the file path of the image. This *bug* which causes this symptom is appeared in the *while loop* starting from **line 14**. In order to fix this *bug*, we add an `if` statement with the condition of `markdown.charAt(openBracket-1)=="!"` to specifically deal with the **image input**.
+
 * After the specified improvement to this test case, we are able to successfully find and get the correct output of `[some-thing.html]` as the following picture:
 
 ![Image5](Week4/test2success.png)
@@ -78,7 +81,9 @@ java MarkdownParse test-file.md
 
 ![sym3.1](Week4/3.1sympt.png)
 
-* **Relationship between the bugs:**
+* In this test case, the *failure-inducing input* is that the link is in the middle of the file and there is only an open bracket in the second line. After running the program, we can see that this input has caused the *symptom* of a `IndexOutOfBoundException`, which means we do not completely implement the index increment and decrement. I think this *bug* which causes this symptom is quite a logical error to the *while loop*.
+
+* So in order to deal with this *bug*, I re-construct and re-design my program implementing a helper method called `findCloseParen` to quick get the position of closeparen. Moreover, I override the method of `getLinks` using the hashmap in order to find the valid website links and store it in the key of the hashmap by finding the index of *the dot* in the file.
 
 * After improving, the output should be `[link.html]`:
 
@@ -95,7 +100,8 @@ java MarkdownParse test-file.md
 
 ![sym3.2](Week4/3.2sympt.png)
 
-* **Relationship between the bugs:**
+* In this test case, the *failure-inducing input* is that the test file only uses `[]` but not `()`. After running the program, we can see that this input has caused the *symptom* of a `IndexOutOfBoundException`.
+Our re-designed program can still be applied here to solve the *bug*. As the new logic for my program is that whenever there is a valid link with dot within an openparen and closeparen, it will be added to the key variable of the hashmap. Therefore, we expect to get the output of `[]` here.
 
 * After improving, the output should be `[]`:
 
@@ -112,7 +118,7 @@ java MarkdownParse test-file.md
 
 ![sym3.3](Week4/3.3sympt.png)
 
-* **Relationship between the bugs:**
+* In this test case, the *failure-inducing input* is that there is no link in the file. After running the program, we can see that this input has caused the *symptom* of a `IndexOutOfBoundException`.
 
 * After improving, the output should be `[]`:
 
