@@ -22,7 +22,13 @@ Host ieng6
 
 ![Image4](Week6/1.3.jpg)
 
-* What if we want to copy a file from local computer to the server? We use the command of `scp`.
+* What if we want to copy a file from local computer to the server? We use the command of `scp`. Firstly we copy the file onto the server:
+
+![Image](Week6/1.3.1.jpg)
+
+* After that, we log back onto the server and we are able to see that the **HelloWorld.txt** has been successfuly copied to *ieng6*.
+
+![Image](Week6/1.3.2.jpg)
 
 ## Setup Github Access from ieng6
 * For this step, we firstly clone our repositary of **markdown-parser** onto the *ieng6* server.
