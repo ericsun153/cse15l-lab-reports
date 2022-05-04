@@ -23,7 +23,15 @@ Host ieng6
 ![Image4](Week6/1.3.jpg)
 
 ## Setup Github Access from ieng6
-* 
+* For this step, we firstly clone our repositary of **markdown-parser** onto the *ieng6* server.
+
+![Image5](Week6/2.1.jpg)
+
+* Now after making some changes to the **MarkdownParse.java**, when we `push` the file back to the Github, we can find that it appears an error for that we cannot use the password authentication to access Github.
+
+![Image6](Week6/2.2.jpg)
+
+* In this situation
 
 ## Copy whole directories with `scp -r`
 * 
