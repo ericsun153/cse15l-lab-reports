@@ -59,4 +59,10 @@ cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar Ma
 
 ![Image9](Week6/3.2.png)
 
-* Finally, in order to have a higher efficiency, we can 
+* Finally, in order to have a higher efficiency, we can use `scp`, `;`, and `ssh` to copy the whole directory and run the tests in one line.
+
+```
+
+```
+
+![Image10](Week6/)
