@@ -44,4 +44,19 @@ Host ieng6
 ![Image7](Week6/2.3.jpg)
 
 ## Copy whole directories with `scp -r`
-* 
+* First of all, we copy our entire **markdown-parse** directory to the *ieng6* server by using:
+```
+scp -r . cs15lsp22ang@ieng6.ucsd.edu:~/markdown-parse
+```
+* After we run `ls` in the command line, we can see the whole folder of **markdown-parse** has been copied to the server.
+
+![Image8](Week6/3.1.jpg)
+
+* Now we run JUnit test directly on the server, and we are able to find the following result by using the code:
+```
+cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
+```
+
+![Image9](Week6/3.2.png)
+
+* Finally, in order to have a higher efficiency, we can 
