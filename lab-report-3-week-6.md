@@ -31,7 +31,9 @@ Host ieng6
 
 ![Image6](Week6/2.2.jpg)
 
-* In this situation
+* In this situation, we generate a new public key for the Github:
+
+![Image7](Week6/2.3.jpg)
 
 ## Copy whole directories with `scp -r`
 * 
