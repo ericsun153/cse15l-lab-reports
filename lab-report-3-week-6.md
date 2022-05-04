@@ -22,6 +22,8 @@ Host ieng6
 
 ![Image4](Week6/1.3.jpg)
 
+* What if we want to copy a file from local computer to the server? We use the command of `scp`.
+
 ## Setup Github Access from ieng6
 * For this step, we firstly clone our repositary of **markdown-parser** onto the *ieng6* server.
 
