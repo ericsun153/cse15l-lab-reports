@@ -62,7 +62,10 @@ cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar Ma
 * Finally, in order to have a higher efficiency, we can use `scp`, `;`, and `ssh` to copy the whole directory and run the tests in one line.
 
 ```
-
+ssh ieng6 "scp-r . cs15lsp22ang@ieng6.ucsd.edu:~/markdown-parse; cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
 ```
 
-![Image10](Week6/)
+* Therefore, after running this single line of command in the terminal, we can get the same result as the above.
+
+![Image10](Week6/3.3.jpg)
+![Image11](Week6/3.4.jpg)
