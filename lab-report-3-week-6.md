@@ -41,7 +41,7 @@ Host ieng6
 
 * In this situation, we generate a new public key for the Github:
 
-![Image7](Week6/2.3.jpg)
+![Image7](Week6/)
 
 ## Copy whole directories with `scp -r`
 * First of all, we copy our entire **markdown-parse** directory to the *ieng6* server by using:
