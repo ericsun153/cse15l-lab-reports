@@ -52,6 +52,19 @@ Host ieng6
 
 ![Image7](Week6/2.6.jpg)
 
+* After we cloning step is done, we `cd` into the *markdown-parser* directory and simply add a new blank text file using `touch`.
+
+![Image7](Week6/2.7.jpg)
+
+* Now we should add all the files to the directory and commit to the Github using `git add . ` and `git commit -m "Any message you want to add"`.
+
+![Image7](Week6/2.8.jpg)
+
+* Finally, we push back to Github from our server by using `git push`, and we are able to see the file we added from Github website.
+
+![Image](Week6/2.9.jpg)
+![Image](Week6/3.0.jpg)
+
 ## Copy whole directories with `scp -r`
 * First of all, we copy our entire **markdown-parse** directory to the *ieng6* server by using:
 ```
