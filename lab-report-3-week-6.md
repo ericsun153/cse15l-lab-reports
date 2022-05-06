@@ -39,9 +39,18 @@ Host ieng6
 
 ![Image6](Week6/2.2.jpg)
 
-* In this situation, we generate a new public key for the Github:
+* In this situation, we generate a new public key for the Github by using the code of `ssh-keygen -t rsa -C "git@github.com"`:
 
-![Image7](Week6/)
+![Image7](Week6/2.3.jpg)
+
+* After this, we should `cat` all the content of **id_rsa.pub** in the **.ssh** folder, and copy that into the *SSH key* in the account setting of Github.
+
+![Image7](Week6/2.4.jpg)
+![Image7](Week6/2.5.jpg)
+
+* Then we use the link for the Github SSH key clone, which is `git@github.com:ericsun153/markdown-parser.git` for my *markdown-parser*, to clone our repository onto the *ieng6* server.
+
+![Image7](Week6/2.6.jpg)
 
 ## Copy whole directories with `scp -r`
 * First of all, we copy our entire **markdown-parse** directory to the *ieng6* server by using:
