@@ -87,7 +87,7 @@ cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar Ma
 ssh ieng6 "scp-r . cs15lsp22ang@ieng6.ucsd.edu:~/markdown-parse; cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
 ```
 
-* Therefore, after running this single line of command in the terminal, we can get the same result as the above.
+* Therefore, after running this single line of command in the terminal, we can get the same result as the above, and here is [my link](https://github.com/ericsun153/markdown-parser/commit/496660f4f17e14c58f8a55a0889390e163f249a1) to the commit
 
 ![Image10](Week6/3.3.jpg)
 ![Image11](Week6/3.4.jpg)
