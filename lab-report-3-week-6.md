@@ -60,7 +60,7 @@ Host ieng6
 
 ![Image7](Week6/2.8.jpg)
 
-* Finally, we push back to Github from our server by using `git push`, and we are able to see the file we added from Github website.
+* Finally, we push back to Github from our server by using `git push`, and we are able to see the file we added from Github website, and here is [my link](https://github.com/ericsun153/markdown-parser/commit/496660f4f17e14c58f8a55a0889390e163f249a1) to the commit
 
 ![Image](Week6/2.9.jpg)
 ![Image](Week6/3.0.jpg)
@@ -83,11 +83,13 @@ cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar Ma
 
 * Finally, in order to have a higher efficiency, we can use `scp`, `;`, and `ssh` to copy the whole directory and run the tests in one line.
 
+* We should remove all the class file using `rm *.class` in order to avoid error. After this, we can use the following one-line code to run the test on the server.
+
 ```
-ssh ieng6 "scp-r . cs15lsp22ang@ieng6.ucsd.edu:~/markdown-parse; cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
+ssh ieng6 "cd markdown-parse; javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
 ```
 
-* Therefore, after running this single line of command in the terminal, we can get the same result as the above, and here is [my link](https://github.com/ericsun153/markdown-parser/commit/496660f4f17e14c58f8a55a0889390e163f249a1) to the commit
+* Therefore, after running this single line of command in the terminal, we can get the same result as the above。
 
 ![Image10](Week6/3.3.jpg)
 ![Image11](Week6/3.4.jpg)
