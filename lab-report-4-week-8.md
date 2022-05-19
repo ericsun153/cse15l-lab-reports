@@ -13,10 +13,13 @@
 ![image2](Week8/1test.png)
 
 ### My implementation on **MarkdownParser**
-* Screenshot
+* After I run the test on Snippet 1, we can see from the command line that it passes the test and the output is the same as we expected.
+
+![image2](Week8/1testsuc.jpg)
+![image2](Week8/1output.jpg)
 
 ### Peer's implementation on **MarkdownParser**
-* Screenshot
+* When running the test of Snippet 1 on my peer's repository of MarkdownParse, we can see that the test 
 
 ## Snippet 2
 
@@ -29,7 +32,9 @@
 ![image2](Week8/2test.jpg)
 
 ### My implementation on **MarkdownParser**
-* 
+* After I run the test for Snippet 2, JUnit shows failure on testing. And the following screenshot from the command line have showed the difference between actual and expected value of my program work.
+
+![image2](Week8/2output.jpg)
 
 ### Peer's implementation on **MarkdownParser**
 * Screenshot
@@ -45,7 +50,9 @@
 ![image2](Week8/3test.jpg)
 
 ### My implementation on **MarkdownParser**
-* Screenshot
+* After I run the test for Snippet 3, JUnit shows failure on testing. And the following screenshot from the command line have showed the difference between actual and expected value of my program work.
+
+![image](Week8/3output.jpg)
 
 ### Peer's implementation on **MarkdownParser**
 * Screenshot
