@@ -37,6 +37,7 @@
 ### My implementation on **MarkdownParser**
 * After I run the test for Snippet 2, JUnit test was passed. And the following screenshot from the command line have showed the actual and expected value of my program work.
 
+![image2](Week8/2result.jpg)
 ![image2](Week8/2output.jpg)
 
 ### Peer's implementation on **MarkdownParser**
@@ -60,7 +61,9 @@
 ![image](Week8/3output.jpg)
 
 ### Peer's implementation on **MarkdownParser**
-* Screenshot
+* After running the test for Snippet 3, my peer's program work fail the test.
+
+![image](Week8/3peerout.jpg)
 
 ## More on Snippets
 * For Snippet 1, it seems my program work has already passed the test, so there is unnecessary to have a code change. As a result, I think the my codes can be cleaned and make it into a more efficient program.
