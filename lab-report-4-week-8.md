@@ -19,7 +19,10 @@
 ![image2](Week8/1output.jpg)
 
 ### Peer's implementation on **MarkdownParser**
-* When running the test of Snippet 1 on my peer's repository of MarkdownParse, we can see that the test 
+* When running the test of Snippet 1 on my peer's repository of MarkdownParse, we can see that the test also passes.
+
+![image2](Week8/1peerout.jpg)
+![image2](Week8)
 
 ## Snippet 2
 
