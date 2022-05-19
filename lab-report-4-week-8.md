@@ -22,7 +22,7 @@
 * When running the test of Snippet 1 on my peer's repository of MarkdownParse, we can see that the test also passes.
 
 ![image2](Week8/1peerout.jpg)
-![image2](Week8)
+![image2](Week8/1peeract.jpg)
 
 ## Snippet 2
 
@@ -30,17 +30,19 @@
 
 ![image1](Week8/2a.jpg)
 
-* As a result, its expected value should be `[b.com, a.com(()), example.com]`. Moreover, here is the code used for testing Snippet 2 using *JUnit*:
+* As a result, its expected value should be `[a.com, a.com(()), example.com]`. Moreover, here is the code used for testing Snippet 2 using *JUnit*:
 
 ![image2](Week8/2test.jpg)
 
 ### My implementation on **MarkdownParser**
-* After I run the test for Snippet 2, JUnit shows failure on testing. And the following screenshot from the command line have showed the difference between actual and expected value of my program work.
+* After I run the test for Snippet 2, JUnit test was passed. And the following screenshot from the command line have showed the actual and expected value of my program work.
 
 ![image2](Week8/2output.jpg)
 
 ### Peer's implementation on **MarkdownParser**
-* Screenshot
+* After running the test for Snippet 2, my peer's program work fail the test.
+
+![image](Week8/2peerout.jpg)
 
 ## Snippet 3
 
@@ -63,6 +65,6 @@
 ## More on Snippets
 * For Snippet 1, it seems my program work has already passed the test, so there is unnecessary to have a code change. As a result, I think the my codes can be cleaned and make it into a more efficient program.
 
-* For Snippet 2, my program work didn't pass the test.
+* For Snippet 2, it seems my program work has already passed the test, so there is unnecessary to have a code change. But for my peer's program work
 
 * For Snippet 3, my program work didn't pass the test.
