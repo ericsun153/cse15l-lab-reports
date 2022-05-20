@@ -68,6 +68,6 @@
 ## More on Snippets
 * For Snippet 1, it seems my program work has already passed the test, so there is unnecessary to have a code change. As a result, I think the my codes can be cleaned and make it into a more efficient program.
 
-* For Snippet 2, it seems my program work has already passed the test, so there is unnecessary to have a code change. But for my peer's program work
+* For Snippet 2, it seems my program work has already passed the test, so there is unnecessary to have a code change. But for my peer's program work, I think his code is more focusing on finding the first and second parentheses after the pair of bracket, so when there is nested links, his code cannot be solved. I think this can be solved under 10 lines as he needs only add one more condition for appearing opening and closing parentheses in the range of a paired brackets.
 
-* For Snippet 3, my program work didn't pass the test.
+* For Snippet 3, my program work didn't pass the test. My actual output of the code is missing the last element of `https://cse.ucsd.edu`. I think this can be also solved in less than 10 lines. I need to change the condition of my method that finding the index of the close parentheses, I need to update the situation when there are more spaces and new lines between the opening and closing parentheses of the link as expected.
