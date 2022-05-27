@@ -10,19 +10,17 @@
 
 * As a result, its expected value should be `[url.com, `\``google.com, google.com, ucsd.edu]`. Moreover, here is the code used for testing Snippet 1 using *JUnit*:
 
-![image2](Week8/1test.png)
+![image2](Week8/1test.jpg)
 
 ### My implementation on **MarkdownParser**
-* After I run the test on Snippet 1, we can see from the command line that it passes the test and the output is the same as we expected.
+* After I run the test for Snippet 3, JUnit shows failure on testing. And the following screenshot from the command line have showed the difference between actual and expected value of my program work.
 
-![image2](Week8/1testsuc.jpg)
-![image2](Week8/1output.jpg)
+![image2](Week8/1testout.jpg)
 
 ### Peer's implementation on **MarkdownParser**
-* When running the test of Snippet 1 on my peer's repository of MarkdownParse, we can see that the test also passes.
+* When running the test of Snippet 1 on my peer's repository of MarkdownParse, we can see that the test also not passes.
 
 ![image2](Week8/1peerout.jpg)
-![image2](Week8/1peeract.jpg)
 
 ## Snippet 2
 
@@ -66,8 +64,8 @@
 ![image](Week8/3peerout.jpg)
 
 ## More on Snippets
-* For Snippet 1, it seems my program work has already passed the test, so there is unnecessary to have a code change. As a result, I think the my codes can be cleaned and make it into a more efficient program.
+* For Snippet 1, my program work didn't pass the test. My actual output of the code has the additional the first element of `url.com`. I think this can be solved in less than 10 lines. Because the code symbol appeared the first in the line, my program can not recognize it so it will output the result of `url.com`. For fixing it, I think the code must be changed to filter different kind of symbols in markdown language, and only when the pairs of brackets and parentheses are detected then we output the link.
 
-* For Snippet 2, it seems my program work has already passed the test, so there is unnecessary to have a code change. But for my peer's program work, I think his code is more focusing on finding the first and second parentheses after the pair of bracket, so when there is nested links, his code cannot be solved. I think this can be solved under 10 lines as he needs only add one more condition for appearing opening and closing parentheses in the range of a paired brackets.
+* For Snippet 2, it seems my program work has already passed the test, so there is unnecessary to have a code change. For my program, I think what makes it passes the test is because I have used Map to find the first pair of parentheses in each line and after found in each line, the program goes next line. But for my peer's program work, I think his code is more focusing on finding the first and second parentheses after the pair of bracket, so when there is nested links, his code cannot be solved. I think this can be solved under 10 lines as he needs only add one more condition for appearing opening and closing parentheses in the range of a paired brackets.
 
 * For Snippet 3, my program work didn't pass the test. My actual output of the code is missing the last element of `https://cse.ucsd.edu`. I think this can be also solved in less than 10 lines. I need to change the condition of my method that finding the index of the close parentheses, I need to update the situation when there are more spaces and new lines between the opening and closing parentheses of the link as expected.
